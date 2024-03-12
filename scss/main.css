@@ -1,0 +1,222 @@
+@font-face {
+  font-family: "Involve";
+  src: url("involve.woff2") format("woff2"), url("involve.woff") format("woff");
+}
+* {
+  margin: 0;
+  font-family: "Involve", sans-serif;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #112134;
+  height: 49px;
+}
+.header div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 50px;
+}
+.header div svg {
+  margin-right: 10px;
+}
+.header div p {
+  font-family: "Involve", sans-serif;
+  font-size: 14px;
+  color: #FFFFFF;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 86px;
+  padding: 0 140px;
+}
+.navbar .logo img {
+  width: 217px;
+  height: 44px;
+}
+.navbar .menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.navbar .menu p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #4D4D4D;
+  text-transform: uppercase;
+  margin: 0px 30px;
+  cursor: pointer;
+}
+.navbar .button-order button {
+  width: 213px;
+  height: 45px;
+  background: #FF602C;
+  border: 1px solid #FF602C;
+  border-radius: 50px;
+  cursor: pointer;
+  color: #FFFFFF;
+  font-size: 16px;
+}
+
+.description {
+  width: 100%;
+  height: 820px;
+  position: relative;
+}
+.description .back {
+  width: 100%;
+  height: 820px;
+  background-color: black;
+  background-image: url("../resource/background.png");
+  background-position: center bottom;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.description .back div {
+  z-index: 1;
+}
+.description .back .breadcrumbs {
+  margin-top: 98px;
+}
+.description .back .breadcrumbs a {
+  font-family: "Cygre", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 24px;
+  color: #B4B4B4;
+  cursor: pointer;
+}
+.description .back .breadcrumbs .check {
+  color: #FFFFFF;
+}
+.description .back .description-text {
+  text-align: center;
+  margin-top: 202px;
+  width: 70%;
+}
+.description .back .description-text p {
+  font-family: "Cygre", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  color: #FFFFFF;
+  line-height: 57.6px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.description .back::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 120px 335px;
+}
+.projects .heading {
+  font-family: "Involve", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: -0.32px;
+  text-transform: uppercase;
+  color: #FF602C;
+}
+.projects .heading:after {
+  content: "-";
+  background: #FF602C;
+  width: 10px;
+  height: 1px;
+  display: inline-block;
+  color: white;
+  vertical-align: middle;
+  margin-left: 11px;
+}
+.projects .heading:before {
+  content: "-";
+  background: #FF602C;
+  width: 10px;
+  height: 1px;
+  display: inline-block;
+  color: white;
+  vertical-align: middle;
+  margin-right: 11px;
+}
+.projects h2 {
+  margin-top: 24px;
+  margin-bottom: 42px;
+  font-family: "Involve", sans-serif;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 58px;
+  letter-spacing: -0.96px;
+  color: #282C35;
+}
+.projects .list-objects {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 37px;
+}
+.projects .list-objects .object {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex: 1;
+}
+.projects .list-objects img {
+  width: 290px;
+  height: 215px;
+}
+.projects .list-objects h6 {
+  margin: 20px 0 10px 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  color: #000000;
+}
+.projects .list-objects p {
+  margin-bottom: 25px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+  opacity: 0.5;
+}
+.projects .list-objects button {
+  width: 143px;
+  height: 45px;
+  border: 1px solid #FF602C;
+  border-radius: 50px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.28px;
+  text-transform: uppercase;
+  color: #FF602C;
+  background-color: #FFFFFF;
+}/*# sourceMappingURL=main.css.map */
